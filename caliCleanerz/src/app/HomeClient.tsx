@@ -53,7 +53,7 @@ export default function HomeClient() {
 
       <section className={styles.intro}>
         <div className={styles.introLeft}>
-          <h1>Woodwright Millwork LLC</h1>
+          <h1>Cali Cleanerz</h1>
           <h2>Licensed & Insured · License #87258</h2>
           <p>
             Woodwright Millwork LLC specializes in custom carpentry and
