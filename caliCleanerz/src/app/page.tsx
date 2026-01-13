@@ -2,20 +2,17 @@ import type { Metadata } from "next";
 import HomeClient from "./HomeClient";
 
 export const metadata: Metadata = {
-  title: "Custom Millwork & Carpentry in North Carolina",
-  description:
-    "Woodwright Millwork LLC provides custom kitchens, bathrooms, cabinetry, built-ins, and specialty carpentry throughout North Carolina.",
-
+  title: "Window and Solar Cleaning Serivces | Cali Cleanerz",
+  description: "Professional window and solar panel cleaning services in California. Enhance your view and energy efficiency with Cali Cleanerz.",
   alternates: {
-    canonical: "https://woodwright.netlify.app/",
+    canonical: "https://calicleanerz.netlify.app/",
   },
 
   openGraph: {
-    title: "Woodwright Millwork LLC | Custom Carpentry & Millwork",
-    description:
-      "Expert custom millwork, built-ins, kitchens, and bathrooms crafted with precision in North Carolina.",
-    url: "https://woodwright.netlify.app/",
-    siteName: "Woodwright Millwork LLC",
+    title: "Window and Solar Cleaning Serivces | Cali Cleanerz",
+    description:"Professional window and solar panel cleaning services in California. Enhance your view and energy efficiency with Cali Cleanerz.",
+    url: "https://calicleanerz.netlify.app/",
+    siteName: "Cali Cleanerz",
     type: "website",
   },
 
