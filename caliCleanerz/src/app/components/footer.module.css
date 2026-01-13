@@ -1,0 +1,152 @@
+.main {
+  min-height: 10vh;
+  width: 100%;
+  padding: 2rem;
+  color: #cfc7bb;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(3%) saturate(959%) hue-rotate(351deg) brightness(94%) contrast(95%);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(17%) saturate(1808%) hue-rotate(172deg) brightness(91%) contrast(92%);
+}
+
+.footer a {
+  align-items: center;
+  gap: 8px;
+}
+
+.footer img {
+  flex-shrink: 0;
+}
+
+.address {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.socials {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.copyright {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  /* Remove default top/bottom spacing */
+}
+
+.copyright a {
+  display: inline;
+  /* Ensures it stays on the same line */
+  text-decoration: none;
+  /* Optional: remove underline */
+  color: inherit;
+  /* Optional: match text color */
+}
+
+.wrench:hover {
+  color: #274c77;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}
+
+@media (max-width: 850px) {
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .logoContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .address {
+    width: 50%;
+  }
+
+  .copyright {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .address {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .socials {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+}
