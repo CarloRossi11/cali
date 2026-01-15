@@ -1,39 +1,37 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-cinzel: 'Cinzel', serif;
-  --font-playfair: 'Playfair Display', serif;
+  --font-rubik: 'Rubik', serif;
+  --font-montseraat: 'Montserrat', serif;
 }
 
 /*
 Color Palette
-#888C89
-#cfc7bb
-#E2C49C
-#2660A4
-#274c77
+#ffffff
+#ff4040
+#000
 https://coolors.co/assets/img/logo.svg
 */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-/* Apply Cinzel Bold to all headers */
+/* Apply Rubik Bold to all headers */
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-rubik);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
-/* Apply Playfair Display to all other text */
+/* Apply Montserrat to all other text */
 body,
 p,
 span,
@@ -42,7 +40,7 @@ a,
 input,
 textarea,
 button {
-  font-family: var(--font-playfair);
+  font-family: var(--font-montserrat);
   font-weight: 400;
   line-height: 1.6;
 }

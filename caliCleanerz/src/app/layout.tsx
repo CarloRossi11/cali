@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Cinzel, Playfair_Display } from "next/font/google";
+import { Rubik, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+//Rubik for headers
+//Montserrat for smaller print
+
+const rubik = Rubik({
+  variable: "--font-rubik",
   subsets: ["latin"],
   weight: ["700"], // Bold for headers
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "700"], // Normal + medium + bold for flexibility
 });
@@ -36,7 +39,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${cinzel.variable} ${playfair.variable}`}>
+      <body className={`${rubik.variable} ${montserrat.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

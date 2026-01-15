@@ -37,19 +37,12 @@ export default function HomeClient() {
 
   return (
     <div className={styles.page}>
+      <div className={styles.navBar}>
+        {isMobile ? <HamburgerMenu /> : <Header />}
+      </div>
+      
       <div className={styles.heroViewport}>
-      {isMobile ? <HamburgerMenu /> : <Header />}
-
-      <Carousel
-        images={[
-          "/ripped/kitchen.webp",
-          "/ripped/playroom.webp",
-          "/ripped/tv.webp",
-          "/ripped/greenroom.webp",
-        ]}
-        autoPlay
-        autoPlayInterval={4000}
-      />
+      
 
       <section className={styles.intro}>
         <div className={styles.introLeft}>
