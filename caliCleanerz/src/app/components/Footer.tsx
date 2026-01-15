@@ -26,9 +26,9 @@ export default function Footer() {
                 Garner, NC 27529
                 <br />
               </a>
-              <a className={styles.wrench} href="tel:+14124917136">
-                (412) 491-7136
-              </a>
+              <a className={styles.wrench} href="tel:+16107639226">
+              610-763-9226
+            </a>
             </address>
           </div>
         </div>

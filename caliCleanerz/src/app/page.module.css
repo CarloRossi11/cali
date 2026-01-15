@@ -44,48 +44,38 @@
   width: 100%;
 }
 
-.heroViewport {
-  display: flex;
-  flex-direction: column;
-  /* min-height: 100vh; */
-  /* attempt to fill the viewport */
-  width: 100%;
-  padding: 1rem;
-  /* optional breathing room */
-  box-sizing: border-box;
-}
-
-.heroViewport>.carousel {
-  flex: 1 1 auto;
-  /* take remaining space */
-  min-height: 150px;
-  /* prevents collapse */
-  max-height: 60vh;
-  /* prevent too tall on large screens */
-}
-
 .intro {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* allows left/right to wrap on narrow or short screens */
   align-items: flex-start;
   /* align content to top */
   justify-content: center;
   /* center horizontally */
-  padding: clamp(1rem, 2vw, 2rem);
-  background-color: #274c77;
+  /* padding: clamp(1rem, 2vw, 2rem); */
+  /* background-color: #ff4040; */
   width: 100%;
 }
 
-.introLeft,
-.introRight {
-  flex: 1 1 100px;
-  /* allow shrinking to fit smaller height */
+.introLeft{
   display: flex;
+  width: 50%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+}
+.introRight {
+  height: 700px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  /* background-color: #cf0119; */
 }
 
 .linkHover {
@@ -262,8 +252,8 @@ a.secondary {
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
   }
-}
+} */

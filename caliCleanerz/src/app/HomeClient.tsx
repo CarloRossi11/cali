@@ -25,10 +25,8 @@ export default function HomeClient() {
   const isMobile = useIsMobile(850);
   const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
 
-
   useEffect(() => {
-    const isApple =
-      /iPhone|iPad|Macintosh/.test(navigator.userAgent);
+    const isApple = /iPhone|iPad|Macintosh/.test(navigator.userAgent);
 
     if (isApple) {
       setMapsLink(APPLE_MAPS);
@@ -40,38 +38,48 @@ export default function HomeClient() {
       <div className={styles.navBar}>
         {isMobile ? <HamburgerMenu /> : <Header />}
       </div>
-      
-      <div className={styles.heroViewport}>
-      
 
+      {/* <div className={styles.heroViewport}> */}
       <section className={styles.intro}>
         <div className={styles.introLeft}>
-          <h1>Cali Cleanerz</h1>
-          <h2>Licensed & Insured · License #87258</h2>
-          <p>
-            Woodwright Millwork LLC specializes in custom carpentry and
-            millwork, delivering beautifully crafted, functional spaces for
-            homes across North Carolina.
-          </p>
+          <HeroOverlay
+            backgroundSrc="/jungleSolar.jpeg"
+            height="700px"
+            // aspectRatio="16/9"
+            overlayDarkness={0.5}
+            gradientOverlay
+            fadeIn
+          >
+            <Image
+              className={styles.logo}
+              src="/surf.avif"
+              alt="Woodwright Millwork logo"
+              width={300}
+              height={75}
+              priority
+            />
+            <p>Windows · Doors · Solar</p>
+          </HeroOverlay>
         </div>
 
         <div className={styles.introRight}>
-          <a className={styles.linkHover} href={mapsLink} target="_blank" rel="noopener noreferrer">
-              65 Glen Rd. PMB 252
-              <br />
-              Garner, NC 27529
-              <br />
-              </a>
-              <a className={styles.linkHover} href="tel:14124917136">412-491-7136</a>
+          <h1>Cali Cleanerz</h1>
+          <h2>San Diego Window Cleaning Co.</h2>
+          <a className={styles.linkHover} href="tel:+16107639226">
+            610-763-9226
+          </a>
+          <section className={styles.contact}>
+            <ContactForm />
+          </section>
 
-          <div className={styles.ctas}>
-            <Link className={styles.primary} href="/contact">
-              Contact
-            </Link>
-          </div>
+          {/* <div className={styles.ctas}>
+              <Link className={styles.primary} href="/contact">
+                Contact
+              </Link>
+            </div> */}
         </div>
       </section>
-      </div>
+      {/* </div> */}
 
       <main className={styles.main}>
         <section className={styles.weDo}>
@@ -115,21 +123,17 @@ export default function HomeClient() {
           gradientOverlay
           fadeIn
         >
-          <Image
+          {/* <Image
             className={styles.logo}
             src="/woddwrightLogo.webp"
             alt="Woodwright Millwork logo"
             width={75}
             height={75}
             priority
-          />
+          /> */}
           <p>Custom Carpentry · Built-Ins · Kitchens & Bathrooms</p>
         </HeroOverlay>
 
-        <section className={styles.contact}>
-          <h2>Get In Touch</h2>
-          <ContactForm />
-        </section>
       </main>
 
       <Footer />
