@@ -168,6 +168,10 @@ a.secondary {
   width: 100%;
 }
 
+.igSection {
+  background-color: #cf0119;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {

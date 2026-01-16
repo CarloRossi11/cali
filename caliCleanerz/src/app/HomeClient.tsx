@@ -14,7 +14,6 @@ import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
 
-
 const GOOGLE_MAPS =
   "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
 
@@ -98,37 +97,22 @@ export default function HomeClient() {
           <div className={styles.weDoRight}>
             <h2>Window Cleaning Services</h2>
             <p>
-              With over 10 years of experience, CaLi Cleanerz specializes in interior and exterior window, gutter, and solar panel cleaning. Trust our skilled San Diego team to enhance your home’s efficiency and curb appeal with exceptional results.
+              With over 10 years of experience, CaLi Cleanerz specializes in
+              interior and exterior window, gutter, and solar panel cleaning.
+              Trust our skilled San Diego team to enhance your home’s efficiency
+              and curb appeal with exceptional results.
             </p>
             <div className={styles.ctas}>
-              <Link className={styles.primary} href="/about">
+              {/* <Link className={styles.primary} href="/about">
                 View Services
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>
 
-      <InstagramPreview username="_cali_cleanerz_" />
-
-        {/* <HeroOverlay
-          backgroundSrc="/ripped/puppy.webp"
-          height="500px"
-          aspectRatio="16/9"
-          overlayDarkness={0.75}
-          gradientOverlay
-          fadeIn
-        >
-          <Image
-            className={styles.logo}
-            src="/woddwrightLogo.webp"
-            alt="Woodwright Millwork logo"
-            width={75}
-            height={75}
-            priority
-          />
-          <p>Custom Carpentry · Built-Ins · Kitchens & Bathrooms</p>
-        </HeroOverlay> */}
-
+        <div className={styles.igSection}>
+          <InstagramPreview username="_cali_cleanerz_" />
+        </div>
       </main>
 
       <Footer />

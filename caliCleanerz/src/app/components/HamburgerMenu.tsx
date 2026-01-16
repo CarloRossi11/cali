@@ -43,12 +43,11 @@ const HamburgerMenu: React.FC = () => {
         <li>
           <Link href="/about">About</Link>
         </li>
-        {/* <li><Link href="/services">Services</Link></li> */}
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
         <li>
           <Link href="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link href="https://l.instagram.com/?u=https%3A%2F%2Fwindowcleaner.com%2FCaLi_CleanerZ%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnePKKRSUH_uTU30Bfx3HZZzMu_eSe5ixw7RwB2aEkoODuXBmg9RHGH8OZaP4_aem_SHDIyRMjU1EldefutSRL3A&e=AT3qlr4ZmMKjP9NVusXQIGSYXas8RgBGOMjUgIvhUJBY60fhxkvYiA-OAHbTCxhUge-FS_yBQuTkydv32y_o_noIrOrtKPizSqOMqKOqvw" target="_blank">Shop</Link>
         </li>
       </ul>
     </nav>
