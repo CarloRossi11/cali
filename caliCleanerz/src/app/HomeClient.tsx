@@ -12,6 +12,8 @@ import useIsMobile from "./hooks/useIsMobile";
 import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
+import InstagramPreview from "./components/InstagramPreview";
+
 
 const GOOGLE_MAPS =
   "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
@@ -86,27 +88,18 @@ export default function HomeClient() {
           <div className={styles.weDoLeft}>
             <ImageShuffle
               images={[
-                { src: "/drive/ceiling.jpg", alt: "Custom wood ceiling" },
-                { src: "/ripped/stairs.webp", alt: "Custom wood stairs" },
-                { src: "/drive/float.jpg", alt: "Floating wood shelves" },
+                { src: "/seeThrough.JPG", alt: "Sceinc see through" },
+                { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
+                { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
               ]}
             />
           </div>
 
           <div className={styles.weDoRight}>
-            <h2>Custom Carpentry & Millwork Services</h2>
+            <h2>Window Cleaning Services</h2>
             <p>
-              We design and build custom kitchens, bathrooms, cabinetry,
-              built-ins, and specialty millwork tailored to your home and style.
+              With over 10 years of experience, CaLi Cleanerz specializes in interior and exterior window, gutter, and solar panel cleaning. Trust our skilled San Diego team to enhance your home’s efficiency and curb appeal with exceptional results.
             </p>
-
-            <ul>
-              <li>Custom kitchens and bathrooms</li>
-              <li>Built-ins and custom cabinetry</li>
-              <li>Home remodeling and detailed carpentry</li>
-              <li>Specialty woodwork and millwork</li>
-            </ul>
-
             <div className={styles.ctas}>
               <Link className={styles.primary} href="/about">
                 View Services
@@ -115,7 +108,9 @@ export default function HomeClient() {
           </div>
         </section>
 
-        <HeroOverlay
+      <InstagramPreview username="_cali_cleanerz_" />
+
+        {/* <HeroOverlay
           backgroundSrc="/ripped/puppy.webp"
           height="500px"
           aspectRatio="16/9"
@@ -123,16 +118,16 @@ export default function HomeClient() {
           gradientOverlay
           fadeIn
         >
-          {/* <Image
+          <Image
             className={styles.logo}
             src="/woddwrightLogo.webp"
             alt="Woodwright Millwork logo"
             width={75}
             height={75}
             priority
-          /> */}
+          />
           <p>Custom Carpentry · Built-Ins · Kitchens & Bathrooms</p>
-        </HeroOverlay>
+        </HeroOverlay> */}
 
       </main>
 
