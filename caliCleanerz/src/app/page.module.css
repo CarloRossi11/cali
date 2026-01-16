@@ -75,7 +75,8 @@
   align-items: center;
   text-align: center;
   padding: 0.5rem;
-  /* background-color: #cf0119; */
+  color: #ffffff;
+  background-color: #cf0119;
 }
 
 .linkHover {
@@ -226,7 +227,6 @@ a.secondary {
 
   .introLeft {
     width: 100%;
-    padding-bottom: 1rem;
   }
 
   .introRight {
@@ -234,6 +234,7 @@ a.secondary {
     padding-top: 1rem;
     text-align: center;
     align-items: unset;
+    height: auto;
   }
 
   .ctas {

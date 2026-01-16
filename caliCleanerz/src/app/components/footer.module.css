@@ -2,7 +2,7 @@
   min-height: 10vh;
   width: 100%;
   padding: 2rem;
-  color: #cfc7bb;
+  color: #000;
 }
 
 .footer {
@@ -91,7 +91,7 @@
 }
 
 .wrench:hover {
-  color: #274c77;
+  color: #cf0119;
 }
 
 

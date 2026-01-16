@@ -64,7 +64,7 @@ export default function HomeClient() {
 
         <div className={styles.introRight}>
           <h1>Cali Cleanerz</h1>
-          <h2>San Diego Window Cleaning Co.</h2>
+          <h2>San Diego Window Cleaning</h2>
           <a className={styles.linkHover} href="tel:+16107639226">
             610-763-9226
           </a>

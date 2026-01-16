@@ -15,8 +15,8 @@ const HamburgerMenu: React.FC = () => {
         <Link href={"/"}>
           <Image
             className={styles.logo}
-            src="/woddwrightLogo.webp"
-            alt="Woodwright logo"
+            src="/iconRipped.png"
+            alt="Cali Cleanerz logo"
             width={75}
             height={75}
             priority

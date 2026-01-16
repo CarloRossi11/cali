@@ -13,8 +13,8 @@ export default function Footer() {
         <div className={styles.address}>
           <div className={styles.addressContainer}>
             <address>
-              <strong>Woodwright & Millwork LLC</strong>
-              <a
+              <strong>Cali Cleanerz Co.</strong>
+              {/* <a
                 className={styles.wrench}
                 href={mapsLink}
                 target="_blank"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <br />
                 Garner, NC 27529
                 <br />
-              </a>
+              </a> */}
               <a className={styles.wrench} href="tel:+16107639226">
               610-763-9226
             </a>
@@ -48,7 +48,7 @@ export default function Footer() {
           <div className={styles.socials}>
             <p className={styles.socialLabel}>Follow Us:</p>
             <div className={styles.socialLinks}>
-              <a
+              {/* <a
                 href="https://www.facebook.com/profile.php?id=100068296598237"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,12 +62,12 @@ export default function Footer() {
                   width={16}
                   height={16}
                 />
-              </a>
+              </a> */}
               <a
-                href="https://www.instagram.com/woodwrightandmillwork/?hl=en"
+                href="https://www.instagram.com/_cali_cleanerz_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Woodwright on Instagram"
+                aria-label="Visit Cali Cleanerz on Instagram"
               >
                 <Image
                   className={styles.icon}
@@ -80,7 +80,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <p>©2019 Woodwright & Millwork LLC. All rights reserved.</p>
+          <p>©2025 Cali Cleanerz Co. All rights reserved.</p>
           <p>
             Website developed by{" "}
             <a
