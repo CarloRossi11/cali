@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Woodwright Millwork LLC",
+  title: "Contact Cali Cleanerz",
   description:
-    "Contact Woodwright Millwork LLC to discuss custom carpentry, millwork, kitchens, bathrooms, and home remodeling projects in North Carolina.",
+    "Contact Cali Cleanerz to schedule your window cleaning service or request a free quote.",
   alternates: {
-    canonical: "https://woodwright.netlify.app/contact",
+    canonical: "https://calicleanerz.netlify.app/contact",
   },
   openGraph: {
-    title: "Contact Woodwright Millwork LLC",
+    title: "Contact Cali Cleanerz",
     description:
-      "Get in touch with Woodwright Millwork LLC to start your custom carpentry or millwork project.",
-    url: "https://woodwright.netlify.app/contact",
+      "Get in touch with Cali Cleanerz to schedule your window cleaning service or request a free quote.",
+    url: "https://calicleanerz.netlify.app/contact",
   },
 };
 

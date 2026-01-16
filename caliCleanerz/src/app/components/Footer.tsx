@@ -12,24 +12,13 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.address}>
           <div className={styles.addressContainer}>
-            <address>
+            
               <strong>Cali Cleanerz Co.</strong>
-              {/* <a
-                className={styles.wrench}
-                href={mapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <br />
-                65 Glen Rd. PMB 252
-                <br />
-                Garner, NC 27529
-                <br />
-              </a> */}
+              
               <a className={styles.wrench} href="tel:+16107639226">
               610-763-9226
             </a>
-            </address>
+            
           </div>
         </div>
         <div className={styles.logoContainer}>
@@ -48,21 +37,6 @@ export default function Footer() {
           <div className={styles.socials}>
             <p className={styles.socialLabel}>Follow Us:</p>
             <div className={styles.socialLinks}>
-              {/* <a
-                href="https://www.facebook.com/profile.php?id=100068296598237"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Woodwright on Facebook"
-              >
-                <Image
-                  className={styles.icon}
-                  aria-hidden
-                  src="/FB.png"
-                  alt="Facebook icon"
-                  width={16}
-                  height={16}
-                />
-              </a> */}
               <a
                 href="https://www.instagram.com/_cali_cleanerz_/"
                 target="_blank"

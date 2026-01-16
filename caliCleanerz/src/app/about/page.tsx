@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-  title: "About Woodwright Millwork LLC",
+  title: "About Cali Cleanerz",
   description:
-    "Learn about Woodwright Millwork LLC, a North Carolina-based company specializing in custom carpentry, cabinetry, millwork, and home remodeling.",
+    "Learn about Cali Cleanerz, a leading window cleaning company in San Diego.",
   alternates: {
-    canonical: "https://woodwright.netlify.app/about",
+    canonical: "https://calicleanerz.netlify.app/about",
   },
   openGraph: {
-    title: "About Woodwright Millwork LLC",
+    title: "About Cali Cleanerz",
     description:
-      "Discover the craftsmanship and experience behind Woodwright Millwork LLC.",
-    url: "https://woodwright.netlify.app/about",
+      "Learn about Cali Cleanerz, a leading window cleaning company in San Diego.",
+    url: "https://calicleanerz.netlify.app/about",
   },
 };
 

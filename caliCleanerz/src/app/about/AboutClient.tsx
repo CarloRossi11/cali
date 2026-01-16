@@ -22,13 +22,11 @@ export default function Page() {
       >
         <h1>ABOUT</h1>
         <p>
-          Woodwright Millwork LLC is dedicated to delivering high-quality custom
-          carpentry and millwork with a focus on craftsmanship, durability, and
-          timeless design.
+          Our mission is simple: to exceed expectations and ensure that every window shines brilliantly while every customer walks away completely satisfied.
         </p>
       </HeroOverlay>
       <div className={styles.main}>
-        <div className={styles.founder}>
+        {/* <div className={styles.founder}>
           <div className={styles.founderText}>
             <h1>Services</h1>
             <p>
@@ -49,18 +47,11 @@ export default function Page() {
               <li>Specialty woodwork and custom millwork</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className={styles.company}>
           <h1>About The Company</h1>
           <p>
-            We believe every home renovation deserves craftsmanship, care, and
-            personalized design. From kitchens and bathrooms to closets,
-            built-ins and custom carpentry, we specialize in transforming your
-            vision into beautifully functional spaces. With meticulous attention
-            to detail, transparent pricing, and a commitment to doing the job
-            right, we aim to deliver quality and trust on every project. Our
-            goal is simple: to make your home more comfortable, more beautiful,
-            and uniquely yours — one crafted wood detail at a time.
+            "With over 10 years of experience, CaLi Cleanerz Window Cleaning provides top-notch service to keep your windows sparkling. Specializing in both interior and exterior window cleaning, we also offer expert gutter cleaning and solar panel cleaning to enhance your home's aesthetic and efficiency. Trust our skilled team to deliver exceptional results with every job, ensuring your property shines bright under the San Diego sun. Satisfaction guaranteed! Fully Insured-NAIC #12831 EIN #33-4820557"
           </p>
         </div>
       </div>

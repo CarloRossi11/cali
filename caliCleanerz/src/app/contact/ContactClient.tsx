@@ -21,12 +21,6 @@ export default function Page() {
         fadeIn
       >
         <h1>CONTACT</h1>
-
-        <p>
-          Our goal is to gather the most information from you to assist us with
-          helping you bring your project to fruition.{" "}
-        </p>
-        <br />
         <p>
           Please complete the form below and we will get back to you within 1-2
           business days to discuss the next steps for your project.{" "}

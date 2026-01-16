@@ -34,8 +34,8 @@
 }
 
 a.primary {
-  background-color: #cfc7bb;
-  color: #274c77;
+  background-color: #cf0119;
+  color: #fff;
   border: var(--foreground);
   gap: 8px;
 }
@@ -47,7 +47,8 @@ a.secondary {
 
 .company {
   padding: 2rem;
-  background-color: #274c77;
+  background-color: #cf0119;
+  color: #fff
 }
 
 .founder {
@@ -107,9 +108,9 @@ a.secondary {
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #274c77;
-    color: #cfc7bb;
-    border: 1px solid #cfc7bb;
+    background-color: #000;
+    color: #fff;
+    /* border: 1px solid #cfc7bb; */
   }
 
   a.secondary:hover {

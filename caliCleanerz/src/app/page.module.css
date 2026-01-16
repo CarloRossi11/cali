@@ -170,6 +170,8 @@ a.secondary {
 
 .igSection {
   background-color: #cf0119;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 /* Enable hover only on non-touch devices */

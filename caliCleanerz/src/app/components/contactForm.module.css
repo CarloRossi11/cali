@@ -46,7 +46,7 @@
   line-height: 1.4;
 
   background-color: #fff;
-  color: #274c77;
+  color: #000;
 
   border: 1px solid #fff;
   border-radius: 4px;
@@ -88,18 +88,18 @@
 
 .contactForm button {
   padding: 0.7rem 1.5rem;
-  background-color: #cfc7bb;
-  color: #274c77;
-  border: 1px solid #274c77;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .contactForm button:hover {
-  background-color: #274c77;
-  color: #cfc7bb;
-  border-color: #cfc7bb;
+  background-color: #fff;
+  color: #cf0119;
+  /* border-color: #cfc7bb; */
 }
 
 .formButton {
