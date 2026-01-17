@@ -40,32 +40,32 @@ export default function HomeClient() {
         {isMobile ? <HamburgerMenu /> : <Header />}
       </div>
 
-      {/* <div className={styles.heroViewport}> */}
       <section className={styles.intro}>
         <div className={styles.introLeft}>
           <HeroOverlay
-            backgroundSrc="/jungleSolar.jpeg"
+            backgroundSrc="/viewz.jpg"
             height="700px"
             // aspectRatio="16/9"
             overlayDarkness={0.5}
             gradientOverlay
             fadeIn
+            parallax
           >
             <Image
               className={styles.logo}
               src="/surf.avif"
-              alt="Woodwright Millwork logo"
+              alt="Cali Cleaners logo"
               width={300}
               height={75}
               priority
             />
-            <p>Windows · Doors · Solar</p>
+            <p>Windows · Solar · Pressure Washing </p>
           </HeroOverlay>
         </div>
 
         <div className={styles.introRight}>
           <h1>Cali Cleanerz</h1>
-          <h2>San Diego Window Cleaning</h2>
+          <h2>San Diego Window Cleaning & Pressure Washing</h2>
           <a className={styles.linkHover} href="tel:+16107639226">
             610-763-9226
           </a>

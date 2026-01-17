@@ -142,7 +142,8 @@
   .socials {
     padding-bottom: 1rem;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    padding: 0 5rem;
     width: 100%;
     align-items: center;
   }
