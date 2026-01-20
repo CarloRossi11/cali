@@ -20,6 +20,10 @@ interface HeroOverlayProps {
   /** Effects */
   parallax?: boolean; // *BUGGY ON MOBILE*
   fadeIn?: boolean;
+
+  /** Content positioning (Option 2) */
+  contentX?: string; // "50%", "20%", etc.
+  contentY?: string; // "50%", "70%", etc.
 }
 
 export default function HeroOverlay({
@@ -32,6 +36,8 @@ export default function HeroOverlay({
   gradientOverlay = false,
   parallax = false,
   fadeIn = false,
+  contentX = "50%",
+  contentY = "50%",
 }: HeroOverlayProps) {
   const [offset, setOffset] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -101,6 +107,11 @@ export default function HeroOverlay({
         className={`${styles.content} ${fadeIn ? styles.fade : ""} ${
           isVisible ? styles.visible : ""
         }`}
+        style={{
+    top: contentY,
+    left: contentX,
+    transform: "translate(-50%, -50%)",
+  }}
       >
         {children}
       </div>

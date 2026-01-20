@@ -50,16 +50,18 @@ export default function HomeClient() {
             gradientOverlay
             fadeIn
             parallax
+            contentX="50%"
+            contentY="15%"
           >
             <Image
               className={styles.logo}
-              src="/surf.avif"
+              src="/logoEmailed.png"
               alt="Cali Cleaners logo"
               width={300}
               height={75}
               priority
             />
-            <p>Windows · Solar · Pressure Washing </p>
+
           </HeroOverlay>
         </div>
 
@@ -89,7 +91,10 @@ export default function HomeClient() {
               images={[
                 { src: "/seeThrough.JPG", alt: "Sceinc see through" },
                 { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
+                { src: "/city.png", alt: "city views" },
                 { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
+                { src: "/patio.png", alt: "patio" },
+                { src: "/levelsBack.jpeg", alt: "cleaned building" },
               ]}
             />
           </div>
