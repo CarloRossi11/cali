@@ -47,6 +47,9 @@ const HamburgerMenu: React.FC = () => {
           <Link href="/contact">Contact</Link>
         </li>
         <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
           <Link href="https://windowcleaner.com/CaLi_CleanerZ" target="_blank">Shop</Link>
         </li>
       </ul>
