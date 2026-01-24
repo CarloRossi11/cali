@@ -14,7 +14,7 @@ export default function Page() {
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
       <HeroOverlay
-        backgroundSrc="/ripped/kitchen.webp"
+        backgroundSrc="/artsyLogo.png"
         height="500px"
         overlayDarkness={0.5}
         gradientOverlay
