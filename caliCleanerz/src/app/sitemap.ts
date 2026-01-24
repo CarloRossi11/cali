@@ -3,19 +3,19 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://woodwright.netlify.app/",
+      url: "https://calicleanerz.netlify.app/",
       lastModified: new Date(),
     },
     {
-      url: "https://woodwright.netlify.app/about",
+      url: "https://calicleanerz.netlify.app/about",
       lastModified: new Date(),
     },
     {
-      url: "https://woodwright.netlify.app/portfolio",
+      url: "https://calicleanerz.netlify.app/portfolio",
       lastModified: new Date(),
     },
     {
-      url: "https://woodwright.netlify.app/contact",
+      url: "https://calicleanerz.netlify.app/contact",
       lastModified: new Date(),
     },
   ];
