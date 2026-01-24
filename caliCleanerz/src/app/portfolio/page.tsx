@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: "https://calicleanerz.netlify.app/portfolio",
   },
   openGraph: {
-    title: "Woodwright Millwork LLC Portfolio",
+    title: "Cali Cleanerz Portfolio",
     description:
       "View pristine results from Cali Cleanerz's window, solar panel, and gutter cleaning services in San Diego.",
     url: "https://calicleanerz.netlify.app/portfolio",

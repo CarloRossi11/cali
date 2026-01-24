@@ -21,10 +21,6 @@ export default function Page() {
         fadeIn
       >
         <h1>PORTFOLIO</h1>
-        <p>
-          Explore a selection of custom kitchens, built-ins, cabinetry, and
-          specialty woodwork completed by Woodwright Millwork LLC.
-        </p>
       </HeroOverlay>
       <div className={styles.main}>
         <ImageViewer

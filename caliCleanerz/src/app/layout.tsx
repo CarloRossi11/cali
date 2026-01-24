@@ -18,9 +18,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Woodwright & Millwork LLC",
+  title: "Cali Cleanerz - Expert Window, Solar, and Power Wshing in San Diego",
   description:
-    "Woodwright and Millwork, LLC specializes in home remodeling, from kitchens, bathrooms to outdoor living.",
+    "Cali Cleanerz offers top-notch window cleaning, solar panel cleaning, and power washing services in San Diego",
 };
 
 export default function RootLayout({
@@ -46,27 +46,27 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Woodwright Millwork LLC",
-              url: "https://woodwright.netlify.app",
-              telephone: "+1-412-491-7136",
+              name: "Cali Cleanerz",
+              url: "https://calicleanerz.netlify.app",
+              telephone: "+1-610-763-9226",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "65 Glen Rd. PMB 252",
-                addressLocality: "Garner",
-                addressRegion: "NC",
-                postalCode: "27529",
+                streetAddress: "4204 45th st",
+                addressLocality: "San Diego",
+                addressRegion: "CA",
+                postalCode: "92115",
                 addressCountry: "US",
               },
               areaServed: {
                 "@type": "AdministrativeArea",
-                name: "North Carolina",
+                name: "California",
               },
               serviceType: [
-                "Custom Millwork",
-                "Custom Carpentry",
-                "Kitchen Remodeling",
-                "Bathroom Remodeling",
-                "Built-ins",
+                "Window Cleaning",
+                "Solar Panel Cleaning",
+                "Power Washing",
+                "Gutter Cleaning",
+                "Window Washing",
               ],
             }),
           }}
