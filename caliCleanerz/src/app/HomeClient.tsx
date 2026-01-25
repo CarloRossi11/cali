@@ -90,9 +90,7 @@ export default function HomeClient() {
               images={[
                 { src: "/seeThrough.JPG", alt: "Sceinc see through" },
                 { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
-                { src: "/city.png", alt: "city views" },
                 { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
-                { src: "/patio.png", alt: "patio" },
                 { src: "/levelsBack.jpeg", alt: "cleaned building" },
               ]}
             />

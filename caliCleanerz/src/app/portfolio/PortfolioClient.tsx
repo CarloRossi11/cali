@@ -16,7 +16,6 @@ export default function Page() {
       <HeroOverlay
         backgroundSrc="/artsyLogo.png"
         height="500px"
-        aspectRatio="10/1"
         overlayDarkness={0.5}
         gradientOverlay
         fadeIn
@@ -26,7 +25,9 @@ export default function Page() {
       <div className={styles.main}>
         <ImageViewer
           images={[
-            { src: "/seeThrough.JPG", alt: "Sceinc see through" },
+            { src: "/solarSunset.jpeg", alt: "Sunset with clean solar" },
+            { src: "/solarShiny.jpeg", alt: "Shiny Solar" },
+            { src: "/seeThrough.JPG", alt: "Scenic see through" },
             { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
             { src: "/city.png", alt: "city views" },
             { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
@@ -36,7 +37,7 @@ export default function Page() {
         />
         <div className={styles.buttonContainer}>
           <div className={styles.ctas}>
-            <a className={styles.primary} href={"/pages/contact"}>
+            <a className={styles.primary} href={"./contact"}>
               Contact
             </a>
           </div>
