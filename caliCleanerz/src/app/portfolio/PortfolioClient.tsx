@@ -16,9 +16,11 @@ export default function Page() {
       <HeroOverlay
         backgroundSrc="/artsyLogo.png"
         height="500px"
+        aspectRatio="10/1"
         overlayDarkness={0.5}
         gradientOverlay
         fadeIn
+        parallax
       >
         <h1>PORTFOLIO</h1>
       </HeroOverlay>

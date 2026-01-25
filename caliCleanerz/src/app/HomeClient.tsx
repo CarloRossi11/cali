@@ -66,7 +66,7 @@ export default function HomeClient() {
         </div>
 
         <div className={styles.introRight}>
-          <h1>Cali Cleanerz</h1>
+          <h1>CaLi Cleanerz</h1>
           <h2>San Diego Window Cleaning & Pressure Washing</h2>
           <a className={styles.linkHover} href="tel:+16107639226">
             610-763-9226
@@ -100,10 +100,10 @@ export default function HomeClient() {
           </div>
 
           <div className={styles.weDoRight}>
-            <h2>Window Cleaning Services</h2>
+            <h2>Window Cleaning & Pressure Washing Services</h2>
             <p>
               With over 10 years of experience, CaLi Cleanerz specializes in
-              interior and exterior window, gutter, and solar panel cleaning.
+              interior and exterior window, gutter, and solar panel cleaning, plus power washing.
               Trust our skilled San Diego team to enhance your home’s efficiency
               and curb appeal with exceptional results.
             </p>

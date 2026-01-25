@@ -12,6 +12,8 @@
   bottom: 0;
   transition: transform 0.2s ease-out;
   z-index: 1;
+  object-fit: cover;
+  image-orientation: none;
 }
 
 .overlay {

@@ -59,7 +59,7 @@ export default function RootLayout({
               },
               areaServed: {
                 "@type": "AdministrativeArea",
-                name: "California",
+                name: "San Diego",
               },
               serviceType: [
                 "Window Cleaning",
