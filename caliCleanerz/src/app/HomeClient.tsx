@@ -49,7 +49,6 @@ export default function HomeClient() {
             overlayDarkness={0.5}
             gradientOverlay
             fadeIn
-            parallax
             contentX="50%"
             contentY="15%"
           >

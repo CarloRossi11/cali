@@ -20,7 +20,6 @@ export default function Page() {
         overlayDarkness={0.5}
         gradientOverlay
         fadeIn
-        parallax
       >
         <h1>PORTFOLIO</h1>
       </HeroOverlay>

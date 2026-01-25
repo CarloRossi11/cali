@@ -18,7 +18,6 @@ interface HeroOverlayProps {
   gradientOverlay?: boolean; // instead of solid dark
 
   /** Effects */
-  parallax?: boolean; // *BUGGY ON MOBILE*
   fadeIn?: boolean;
 
   /** Content positioning (Option 2) */
@@ -34,7 +33,6 @@ export default function HeroOverlay({
   aspectRatio,
   overlayDarkness = 0.4,
   gradientOverlay = false,
-  parallax = false,
   fadeIn = false,
   contentX = "50%",
   contentY = "50%",
@@ -42,16 +40,6 @@ export default function HeroOverlay({
   const [offset, setOffset] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-
-  // Parallax effect *BUGGY ON MOBILE*
-  useEffect(() => {
-    if (!parallax) return;
-    const handleScroll = () => {
-      setOffset(window.scrollY * 0.4);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [parallax]);
 
   // Fade-in effect (IntersectionObserver)
   useEffect(() => {
@@ -86,7 +74,6 @@ export default function HeroOverlay({
         className={styles.bgImage}
         style={{
           objectFit: "cover",
-          transform: parallax ? `translateY(${offset * 0.2}px)` : "none",
         }}
       />
 
