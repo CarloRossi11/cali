@@ -15,21 +15,10 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (!isLightboxOpen) return;
-      if (e.key === "ArrowRight") {
-        nextImage();
-      } else if (e.key === "ArrowLeft") {
-        prevImage();
-      } else if (e.key === "Escape") {
-        closeLightbox();
-      }
-    };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [isLightboxOpen, currentIndex, images.length]);
+  // Swipe refs
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+  const SWIPE_THRESHOLD = 50;
 
   const nextImage = () => {
     setCurrentIndex((i) => (i + 1) % images.length);
@@ -48,9 +37,61 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
     setIsLightboxOpen(false);
   };
 
+  // Keyboard navigation
+  useEffect(() => {
+    if (!isLightboxOpen) return;
+
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "Escape") closeLightbox();
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [isLightboxOpen]);
+
+  // Prevent background scroll
+  useEffect(() => {
+    document.body.style.overflow = isLightboxOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isLightboxOpen]);
+
+  // Swipe handlers
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const touch = e.touches[0];
+    touchStartX.current = touch.clientX;
+    touchStartY.current = touch.clientY;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartX.current;
+    const deltaY = touch.clientY - touchStartY.current;
+
+    // Ignore vertical swipes
+    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+      touchStartX.current = null;
+      touchStartY.current = null;
+      return;
+    }
+
+    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
+      if (deltaX < 0) nextImage();
+      else prevImage();
+    }
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+  };
+
   return (
     <div className={styles.viewerContainer}>
-      {/* Main image + nav arrows */}
+      {/* Main image */}
       <div className={styles.mainImageWrapper}>
         <button
           className={styles.navButton}
@@ -59,12 +100,14 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
         >
           ‹
         </button>
+
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt ?? `Image ${currentIndex + 1}`}
           className={styles.mainImage}
           onClick={() => openLightbox(currentIndex)}
         />
+
         <button
           className={styles.navButton}
           onClick={nextImage}
@@ -74,7 +117,7 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
         </button>
       </div>
 
-      {/* Thumbnail strip / pagination */}
+      {/* Thumbnails */}
       <div className={styles.thumbnailStrip}>
         {images.map((img, idx) => (
           <img
@@ -91,41 +134,53 @@ const ImageViewer: React.FC<ImageViewerProps> = ({
         ))}
       </div>
 
-      {/* Lightbox overlay */}
+      {/* Lightbox */}
       {isLightboxOpen && (
-        <div className={styles.lightboxOverlay} onClick={closeLightbox}>
-          <div
-            className={styles.lightboxContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className={styles.lightboxNav}
-              onClick={prevImage}
-              aria-label="Previous in Lightbox"
-            >
-              ‹
-            </button>
-            <img
-              src={images[currentIndex].src}
-              alt={images[currentIndex].alt ?? `Image ${currentIndex + 1}`}
-              className={styles.lightboxImage}
-            />
-            <button
-              className={styles.lightboxNav}
-              onClick={nextImage}
-              aria-label="Next in Lightbox"
-            >
-              ›
-            </button>
-            <button
-              className={styles.lightboxClose}
-              onClick={closeLightbox}
-              aria-label="Close Lightbox"
-            >
-              ×
-            </button>
-          </div>
-        </div>
+        <div
+  className={styles.lightboxOverlay}
+  onClick={closeLightbox}
+>
+  <button
+    className={`${styles.lightboxNav} ${styles.leftNav}`}
+    onClick={(e) => {
+      e.stopPropagation();
+      prevImage();
+    }}
+  >
+    ‹
+  </button>
+
+  <div
+    className={styles.lightboxContent}
+    onClick={(e) => e.stopPropagation()}
+  >
+    <img
+      src={images[currentIndex].src}
+      className={styles.lightboxImage}
+    />
+
+    <button
+      className={styles.lightboxClose}
+      onClick={(e) => {
+        e.stopPropagation();
+        closeLightbox();
+      }}
+    >
+      ×
+    </button>
+  </div>
+
+  <button
+    className={`${styles.lightboxNav} ${styles.rightNav}`}
+    onClick={(e) => {
+      e.stopPropagation();
+      nextImage();
+    }}
+  >
+    ›
+  </button>
+</div>
+
       )}
     </div>
   );

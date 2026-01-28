@@ -34,7 +34,7 @@ export default function Page() {
               With over 10 years of experience, CaLi Cleanerz Window Cleaning
               provides top-notch service to keep your windows sparkling.
               Specializing in both interior and exterior window cleaning, we
-              also offer expert gutter cleaning and solar panel cleaning to
+              also offer expertpower washing, gutter cleaning, and solar panel cleaning to
               enhance your home's aesthetic and efficiency. Trust our skilled
               team to deliver exceptional results with every job, ensuring your
               property shines bright under the San Diego sun.
