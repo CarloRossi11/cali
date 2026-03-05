@@ -13,6 +13,7 @@ import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
+import GoogleReviews from "./components/GoogleReviews";
 
 const GOOGLE_MAPS =
   "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
@@ -111,6 +112,10 @@ export default function HomeClient() {
             </div>
           </div>
         </section>
+
+        <div>
+          <GoogleReviews />
+        </div>
 
         <div className={styles.igSection}>
           <InstagramPreview username="_cali_cleanerz_" />

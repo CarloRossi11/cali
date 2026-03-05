@@ -1,0 +1,48 @@
+.reviewsSection {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.reviewsGrid {
+  margin-top: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.reviewCard {
+  padding: 30px;
+  border-radius: 20px;
+  background: #f7f7f7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-6px);
+}
+
+.stars {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.reviewText {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.reviewFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.googleLink {
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 600;
+  text-decoration: none;
+}
