@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
 import Header from "./components/Header";
 import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
@@ -15,25 +13,16 @@ import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
 import GoogleReviews from "./components/GoogleReviews";
 
-const GOOGLE_MAPS =
-  "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
-
-const APPLE_MAPS =
-  "https://maps.apple.com/?address=65+Glen+Rd.+PMB+252,+Garner,+NC+27529";
-
-const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
+// ToDo: //
+//////////
+// Replace logos
+// Add motion
+// Increase White Space
+// add portfolio
+// 1.618 fonts
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
-  const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
-
-  useEffect(() => {
-    const isApple = /iPhone|iPad|Macintosh/.test(navigator.userAgent);
-
-    if (isApple) {
-      setMapsLink(APPLE_MAPS);
-    }
-  }, []);
 
   return (
     <div className={styles.page}>
@@ -55,10 +44,10 @@ export default function HomeClient() {
           >
             <Image
               className={styles.logo}
-              src="/logoEmailed.png"
+              src="/redhorizontal.png"
               alt="Cali Cleaners logo"
               width={300}
-              height={75}
+              height={100}
               priority
             />
 
