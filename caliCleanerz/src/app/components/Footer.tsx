@@ -58,7 +58,7 @@ export default function Footer() {
           <p>
             Website developed by{" "}
             <a
-              href="https://techwrench.co/"
+              href="https://www.techwrench.co"
               target="_blank"
               className={styles.wrench}
             >
