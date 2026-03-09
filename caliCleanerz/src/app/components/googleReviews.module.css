@@ -45,4 +45,8 @@
   margin-top: 40px;
   font-weight: 600;
   text-decoration: none;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.googleLink:hover {
+  color: #cf0119;
 }
