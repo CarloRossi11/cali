@@ -2,7 +2,7 @@
   background-color: #cf0119;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.478) 0px 8px 24px;
   max-width: 90%;
   margin: auto;
   overflow-y: auto;
@@ -108,6 +108,12 @@
   margin-top: 1rem;
 }
 
+.successMessage {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 /* ---------------------------
    Desktop Layout
 ---------------------------- */
@@ -119,7 +125,7 @@
 
   /* Full-width fields */
   .formGroup textarea,
-  .formButton {
+  .formButton, .successMessage  {
     grid-column: 1 / -1;
   }
 
