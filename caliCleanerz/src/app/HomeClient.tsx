@@ -40,6 +40,7 @@ export default function HomeClient() {
               width={300}
               height={100}
               priority
+              sizes="300px"  
             />
           </div>
           <motion.div className={styles.overlayImageWrapper} style={{ y }}>
@@ -47,6 +48,7 @@ export default function HomeClient() {
               src="/viewz.jpg"
               alt="Rooftop View"
               fill
+              priority
               className={styles.overlayImage}
             />
           </motion.div>
