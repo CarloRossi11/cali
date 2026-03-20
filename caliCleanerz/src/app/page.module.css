@@ -2,16 +2,8 @@
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #3b6a78;
-
   min-height: 100vh;
   width: 100%;
-  /* font-family: var(--font-geist-sans); */
-  /* overflow-y: auto; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 
@@ -20,9 +12,6 @@
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #3b6a78;
-    --button-secondary-hover: #001d23;
     padding-top: 64px; /* match navbar height */
   }
 }
@@ -46,26 +35,40 @@
 
 .intro {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* allows left/right to wrap on narrow or short screens */
   align-items: flex-start;
-  /* align content to top */
   justify-content: center;
-  /* center horizontally */
-  /* padding: clamp(1rem, 2vw, 2rem); */
-  /* background-color: #ff4040; */
   width: 100%;
 }
 
 .introLeft{
+  position: relative;
+  height: 700px;
   display: flex;
   width: 50%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+    padding: 2rem;
+  overflow: hidden;
 }
 
+.overlayImageWrapper {
+  position: absolute;
+  inset: -15%;
+  z-index: 1;
+}
+
+.overlayImage {
+  object-fit: cover;
+  z-index: 1;
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
 .introRight {
   height: 700px;
   width: 50%;

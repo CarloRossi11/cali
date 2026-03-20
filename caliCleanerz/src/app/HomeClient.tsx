@@ -9,19 +9,25 @@ import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
 import GoogleReviews from "./components/GoogleReviews";
 import Navbar from "./Navbar";
+import { motion, useTransform, useScroll } from "motion/react";
 
 ///////////
 // ToDo: //
 ///////////
 // Add motion
-// Increase White Space
 // add portfolio functionality?
-// 1.618 fonts
 // update contact button
 
 // update google profile
 
 export default function HomeClient() {
+
+  const { scrollYProgress } = useScroll({
+    offset: ["start start", "end start"], // tracks while hero is in view
+  });
+
+  // Move image upward as user scrolls down — adjust the output range to taste
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   return (
     <div className={styles.page}>
@@ -30,27 +36,28 @@ export default function HomeClient() {
       </div>
 
       <section className={styles.intro}>
+
         <div className={styles.introLeft}>
-          <HeroOverlay
-            backgroundSrc="/viewz.jpg"
-            height="700px"
-            // aspectRatio="16/9"
-            overlayDarkness={0.5}
-            gradientOverlay
-            fadeIn
-            contentX="50%"
-            contentY="15%"
-          >
+          
+           {/* <Reveal direction="right"> */}
+          <div className={styles.heroText}>
             <Image
-              className={styles.logo}
-              src="/redhorizontal.png"
-              alt="Cali Cleaners logo"
+              src="/redHorizontal.png"
+              alt="Cali Cleanerz logo"
               width={300}
               height={100}
               priority
             />
-
-          </HeroOverlay>
+          </div>
+        {/* </Reveal> */}
+         <motion.div className={styles.overlayImageWrapper} style={{ y }}>
+          <Image
+            src="/viewz.jpg"
+            alt="Rooftop View"
+            fill
+            className={styles.overlayImage}
+          />
+        </motion.div>
         </div>
 
         <div className={styles.introRight}>
