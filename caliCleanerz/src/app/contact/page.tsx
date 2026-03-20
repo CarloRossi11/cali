@@ -2,17 +2,34 @@ import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Cali Cleanerz",
+  title: "Contact Us | Cali Cleanerz - Get a Free Quote Today",
   description:
-    "Contact Cali Cleanerz to schedule your window cleaning service or request a free quote.",
+    "Contact Cali Cleanerz to schedule window cleaning, solar panel cleaning, or power washing in San Diego. Call us at 610-763-9226 or request a free quote online.",
   alternates: {
-    canonical: "https://calicleanerz.netlify.app/contact",
+    canonical: "https://calicleanerz.com/contact",
   },
   openGraph: {
-    title: "Contact Cali Cleanerz",
+    title: "Contact Us | Cali Cleanerz - Get a Free Quote Today",
     description:
-      "Get in touch with Cali Cleanerz to schedule your window cleaning service or request a free quote.",
-    url: "https://calicleanerz.netlify.app/contact",
+      "Contact Cali Cleanerz to schedule window cleaning, solar panel cleaning, or power washing in San Diego. Call us at 610-763-9226 or request a free quote online.",
+    url: "https://calicleanerz.com/contact",
+    siteName: "Cali Cleanerz",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Cali Cleanerz - San Diego Cleaning Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Cali Cleanerz - Get a Free Quote Today",
+    description:
+      "Contact Cali Cleanerz to schedule window cleaning, solar panel cleaning, or power washing in San Diego. Call us at 610-763-9226 or request a free quote online.",
+    images: ["/og-image.png"],
   },
 };
 
