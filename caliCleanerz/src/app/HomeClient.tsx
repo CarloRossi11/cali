@@ -1,33 +1,33 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HamburgerMenu from "./components/HamburgerMenu";
-import useIsMobile from "./hooks/useIsMobile";
 import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
 import GoogleReviews from "./components/GoogleReviews";
+import Navbar from "./Navbar";
 
+///////////
 // ToDo: //
-//////////
+///////////
 // Replace logos
 // Add motion
 // Increase White Space
-// add portfolio
+// add portfolio functionality?
 // 1.618 fonts
+// update contact button
+
+// update google profile
 
 export default function HomeClient() {
-  const isMobile = useIsMobile(850);
 
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
-        {isMobile ? <HamburgerMenu /> : <Header />}
+        <Navbar />
       </div>
 
       <section className={styles.intro}>

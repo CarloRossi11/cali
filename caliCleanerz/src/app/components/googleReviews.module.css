@@ -14,7 +14,7 @@
   padding: 30px;
   border-radius: 20px;
   background: #f7f7f7;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: left;
   transition: transform 0.3s ease;
 }

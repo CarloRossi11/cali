@@ -12,20 +12,17 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.address}>
           <div className={styles.addressContainer}>
-            
-              <strong>Cali Cleanerz Co.</strong>
-              
-              <a className={styles.wrench} href="tel:+16107639226">
+            <strong>Cali Cleanerz Co.</strong>
+
+            <a className={styles.wrench} href="tel:+16107639226">
               610-763-9226
             </a>
-            
           </div>
         </div>
         <div className={styles.logoContainer}>
           <Link href={"/"}>
             <Image
-              className={styles.logo}
-              src="/iconRipped.png"
+              src="/officialLogo.png"
               alt="Cali Cleanerz logo"
               width={75}
               height={75}
