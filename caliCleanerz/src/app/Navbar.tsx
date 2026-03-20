@@ -43,7 +43,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h3>Home</h3>
+          <h4>Home</h4>
         </MotionLink>
 
         <MotionLink
@@ -52,7 +52,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h3>About</h3>
+          <h4>About</h4>
         </MotionLink>
       </div>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h3>Portfolio</h3>
+          <h4>Portfolio</h4>
         </MotionLink>
 
         <MotionLink
@@ -88,7 +88,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h3>Contact</h3>
+          <h4>Contact</h4>
         </MotionLink>
 
         <MotionLink
@@ -96,7 +96,7 @@ export default function Navbar() {
           target="_blank"
           href={"https://windowcleaner.com/CaLi_CleanerZ"}
         >
-          <h3>Shop</h3>
+          <h4>Shop</h4>
         </MotionLink>
       </div>
 
