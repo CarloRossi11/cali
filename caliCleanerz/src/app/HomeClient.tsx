@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
 import ImageShuffle from "./components/ImageShuffle";
-import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
 import InstagramPreview from "./components/InstagramPreview";
 import GoogleReviews from "./components/GoogleReviews";
@@ -18,10 +17,7 @@ import { motion, useTransform, useScroll } from "motion/react";
 // add portfolio functionality?
 // update contact button
 
-// update google profile
-
 export default function HomeClient() {
-
   const { scrollYProgress } = useScroll({
     offset: ["start start", "end start"], // tracks while hero is in view
   });
@@ -36,10 +32,7 @@ export default function HomeClient() {
       </div>
 
       <section className={styles.intro}>
-
         <div className={styles.introLeft}>
-          
-           {/* <Reveal direction="right"> */}
           <div className={styles.heroText}>
             <Image
               src="/redHorizontal.png"
@@ -49,15 +42,14 @@ export default function HomeClient() {
               priority
             />
           </div>
-        {/* </Reveal> */}
-         <motion.div className={styles.overlayImageWrapper} style={{ y }}>
-          <Image
-            src="/viewz.jpg"
-            alt="Rooftop View"
-            fill
-            className={styles.overlayImage}
-          />
-        </motion.div>
+          <motion.div className={styles.overlayImageWrapper} style={{ y }}>
+            <Image
+              src="/viewz.jpg"
+              alt="Rooftop View"
+              fill
+              className={styles.overlayImage}
+            />
+          </motion.div>
         </div>
 
         <div className={styles.introRight}>
@@ -69,15 +61,8 @@ export default function HomeClient() {
           <section className={styles.contact}>
             <ContactForm />
           </section>
-
-          {/* <div className={styles.ctas}>
-              <Link className={styles.primary} href="/contact">
-                Contact
-              </Link>
-            </div> */}
         </div>
       </section>
-      {/* </div> */}
 
       <main className={styles.main}>
         <section className={styles.weDo}>
@@ -96,15 +81,11 @@ export default function HomeClient() {
             <h3>Premium Window Cleaning & Pressure Washing</h3>
             <p>
               With over 10 years of experience, CaLi Cleanerz specializes in
-              interior and exterior window, gutter, and solar panel cleaning, plus power washing.
-              Trust our skilled San Diego team to enhance your home’s efficiency
-              and curb appeal with exceptional results.
+              interior and exterior window, gutter, and solar panel cleaning,
+              plus power washing. Trust our skilled San Diego team to enhance
+              your home’s efficiency and curb appeal with exceptional results.
             </p>
-            <div className={styles.ctas}>
-              {/* <Link className={styles.primary} href="/about">
-                View Services
-              </Link> */}
-            </div>
+            <div className={styles.ctas}></div>
           </div>
         </section>
 
