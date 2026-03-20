@@ -19,8 +19,7 @@ export default function Page() {
       >
         <h1>CONTACT</h1>
         <p>
-          Please complete the form below and we will get back to you within 1-2
-          business days to discuss the next steps for your project.{" "}
+          Please complete the form below and we will get back to you soon to discuss the next steps for your project.{" "}
         </p>
       </HeroOverlay>
       <div className={styles.main}>

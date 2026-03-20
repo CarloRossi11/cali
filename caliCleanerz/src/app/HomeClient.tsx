@@ -13,7 +13,6 @@ import Navbar from "./Navbar";
 ///////////
 // ToDo: //
 ///////////
-// Replace logos
 // Add motion
 // Increase White Space
 // add portfolio functionality?
@@ -87,7 +86,7 @@ export default function HomeClient() {
           </div>
 
           <div className={styles.weDoRight}>
-            <h2>Window Cleaning & Pressure Washing Services</h2>
+            <h3>Premium Window Cleaning & Pressure Washing</h3>
             <p>
               With over 10 years of experience, CaLi Cleanerz specializes in
               interior and exterior window, gutter, and solar panel cleaning, plus power washing.
