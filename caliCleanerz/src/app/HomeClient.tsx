@@ -71,10 +71,10 @@ export default function HomeClient() {
           <div className={styles.weDoLeft}>
             <ImageShuffle
               images={[
-                { src: "/seeThrough.JPG", alt: "Sceinc see through" },
-                { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
-                { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
-                { src: "/levelsBack.jpeg", alt: "cleaned building" },
+                { src: "/seeThrough.webp", alt: "Sceinc see through" },
+                { src: "/roofSolar.webp", alt: "Cloudy skies, clean panels" },
+                { src: "/solarCompare.webp", alt: "clean vs dirty solar" },
+                { src: "/levelsBack.webp", alt: "cleaned building" },
               ]}
             />
           </div>

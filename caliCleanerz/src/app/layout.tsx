@@ -65,14 +65,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className={`${rubik.variable} ${montserrat.variable}`}>
         {/* LocalBusiness Schema */}
         <script
@@ -142,9 +134,7 @@ export default function RootLayout({
                   },
                 ],
               },
-              sameAs: [
-                "https://www.instagram.com/_cali_cleanerz_/"
-              ],
+              sameAs: ["https://www.instagram.com/_cali_cleanerz_/"],
             }),
           }}
         />
