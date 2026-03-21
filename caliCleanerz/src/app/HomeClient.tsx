@@ -42,7 +42,7 @@ export default function HomeClient() {
           </div>
           <motion.div className={styles.overlayImageWrapper} style={{ y }}>
             <Image
-              src="/viewz.jpg"
+              src="/viewz.webp"
               alt="Rooftop View"
               fill
               priority

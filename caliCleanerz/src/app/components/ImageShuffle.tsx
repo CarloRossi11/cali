@@ -42,6 +42,7 @@ export default function ImageShuffle({ images }: ImageShuffleProps) {
               src={img.src}
               alt={img.alt}
               fill
+              sizes="(max-width: 768px) 100vw, 348px"
               style={{ objectFit: "cover" }}
             />
           </div>
