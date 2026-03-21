@@ -5,13 +5,32 @@
   color: #fff
 }
 
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e8e4e4;
+.heroArea {
+  position: relative;
+  background-color: #000;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
 }
 
-.text {
-  font-size: 1.2rem;
-  color: #666;
+.overlayImageWrapper {
+  position: absolute;
+  inset: -80px;
+  z-index: 0;
+}
+
+.overlayImage {
+  position: absolute;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to right, transparent 20%, black 70%);
+  mask-image: linear-gradient(to right, transparent 20%, black 70%);
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
 }
