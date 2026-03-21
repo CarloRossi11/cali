@@ -5,13 +5,20 @@
   --font-montserrat: 'Montserrat', serif;
 
   /* Type Scale (base: 16px, ratio: 1.333 — Perfect Fourth) */
-  --text-xs:   9px;     /* base ÷ 1.333² — captions, legal */
-  --text-sm:   12px;    /* base ÷ 1.333  — labels, small UI */
-  --text-base: 16px;    /* body copy */
-  --text-md:   21.33px; /* base × 1.333  — h4, h5 */
-  --text-lg:   28.43px; /* base × 1.333² — h3 */
-  --text-xl:   37.90px; /* base × 1.333³ — h2 */
-  --text-2xl:  50.52px; /* base × 1.333⁴ — h1, hero */
+  --text-xs: 9px;
+  /* base ÷ 1.333² — captions, legal */
+  --text-sm: 12px;
+  /* base ÷ 1.333  — labels, small UI */
+  --text-base: 16px;
+  /* body copy */
+  --text-md: 21.33px;
+  /* base × 1.333  — h4, h5 */
+  --text-lg: 28.43px;
+  /* base × 1.333² — h3 */
+  --text-xl: 37.90px;
+  /* base × 1.333³ — h2 */
+  --text-2xl: 50.52px;
+  /* base × 1.333⁴ — h1, hero */
 }
 
 /*

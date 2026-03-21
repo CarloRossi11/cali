@@ -12,7 +12,8 @@
     --gray-rgb: 255, 255, 255;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-    padding-top: 64px; /* match navbar height */
+    padding-top: 64px;
+    /* match navbar height */
   }
 }
 
@@ -40,7 +41,7 @@
   width: 100%;
 }
 
-.introLeft{
+.introLeft {
   position: relative;
   height: 700px;
   display: flex;
@@ -49,7 +50,7 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-    padding: 2rem;
+  padding: 2rem;
   overflow: hidden;
 }
 
@@ -69,6 +70,7 @@
   z-index: 2;
   padding: 2rem;
 }
+
 .introRight {
   height: 700px;
   width: 50%;

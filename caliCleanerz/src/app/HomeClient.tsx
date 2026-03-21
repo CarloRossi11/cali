@@ -35,9 +35,9 @@ export default function HomeClient() {
               src="/redHorizontal.png"
               alt="Cali Cleanerz logo"
               width={300}
-              height={100}
+              height={90}
               priority
-              sizes="300px"  
+              sizes="300px"
             />
           </div>
           <motion.div className={styles.overlayImageWrapper} style={{ y }}>

@@ -31,8 +31,8 @@ export default function Page() {
           <div className={styles.heroText}>
             <h1>CONTACT</h1>
             <p>
-              Please complete the form below and we will get back to you soon
-              to discuss the next steps for your project.
+              Please complete the form below and we will get back to you soon to
+              discuss the next steps for your project.
             </p>
           </div>
         </Reveal>
