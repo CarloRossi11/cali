@@ -11,11 +11,11 @@ export default function Page() {
     <div className={styles.wrapper}>
       <Navbar/>
       <HeroOverlay
-        backgroundSrc="/city.png"
+        backgroundSrc="/city.webp"
         height="500px"
         overlayDarkness={0.5}
-        // gradientOverlay
         fadeIn
+        priority
       >
         <h1>CONTACT</h1>
         <p>

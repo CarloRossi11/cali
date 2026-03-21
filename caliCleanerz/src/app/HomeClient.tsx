@@ -13,9 +13,6 @@ import { motion, useTransform, useScroll } from "motion/react";
 ///////////
 // ToDo: //
 ///////////
-// Add motion
-// add portfolio functionality?
-// update contact button
 
 export default function HomeClient() {
   const { scrollYProgress } = useScroll({

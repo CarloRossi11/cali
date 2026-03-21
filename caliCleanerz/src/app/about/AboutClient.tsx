@@ -10,11 +10,12 @@ export default function Page() {
     <div className={styles.wrapper}>
       <Navbar />
       <HeroOverlay
-        backgroundSrc="/jungleSolar.jpeg"
+        backgroundSrc="/jungleSolar.webp"
         height="500px"
         overlayDarkness={0.5}
         gradientOverlay
         fadeIn
+        priority
       >
         <h1>ABOUT</h1>
         <p>

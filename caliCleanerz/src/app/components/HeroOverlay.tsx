@@ -23,6 +23,8 @@ interface HeroOverlayProps {
   /** Content positioning (Option 2) */
   contentX?: string; // "50%", "20%", etc.
   contentY?: string; // "50%", "70%", etc.
+
+  priority?: boolean; // for Image optimization
 }
 
 export default function HeroOverlay({
@@ -36,6 +38,7 @@ export default function HeroOverlay({
   fadeIn = false,
   contentX = "50%",
   contentY = "50%",
+  priority = false,  
 }: HeroOverlayProps) {
   const [offset, setOffset] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -72,8 +75,9 @@ export default function HeroOverlay({
         alt={backgroundAlt}
         fill
         className={styles.bgImage}
+        priority={priority}
         style={{
-          objectFit: "cover",
+        objectFit: "cover",
         }}
       />
 

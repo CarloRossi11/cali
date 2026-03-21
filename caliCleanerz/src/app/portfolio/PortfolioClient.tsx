@@ -12,11 +12,12 @@ export default function Page() {
     <div className={styles.wrapper}>
       <Navbar/>
       <HeroOverlay
-        backgroundSrc="/artsyLogo.png"
+        backgroundSrc="/artsyLogo.webp"
         height="500px"
         overlayDarkness={0.5}
         gradientOverlay
         fadeIn
+        priority
       >
         <h1>PORTFOLIO</h1>
       </HeroOverlay>
