@@ -35,6 +35,22 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
+
+      {/* Logo */}
+      <div className={styles.logo}>
+        <Link href="/">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Image
+              src="/officialLogo.png"
+              alt="Cali Cleanerz logo"
+              width={75}
+              height={75}
+              priority
+            />
+          </motion.div>
+        </Link>
+      </div>
+
       {/* Desktop Left Links */}
       <div className={styles.desktopLinks}>
         <MotionLink
@@ -54,25 +70,8 @@ export default function Navbar() {
         >
           <h4>About</h4>
         </MotionLink>
-      </div>
-
-      {/* Logo */}
-      <div className={styles.logo}>
-        <Link href="/">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Image
-              src="/officialLogo.png"
-              alt="Cali Cleanerz logo"
-              width={75}
-              height={75}
-              priority
-            />
-          </motion.div>
-        </Link>
-      </div>
 
       {/* Desktop Right Links */}
-      <div className={styles.desktopLinks}>
         <MotionLink
           className={styles.button}
           href="/portfolio"
