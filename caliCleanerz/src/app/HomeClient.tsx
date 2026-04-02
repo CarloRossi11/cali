@@ -79,10 +79,18 @@ export default function HomeClient() {
           <div className={styles.weDoRight}>
             <h3>Premium Window Cleaning & Pressure Washing</h3>
             <p>
-              With over 10 years of experience, CaLi Cleanerz specializes in
-              interior and exterior window, gutter, and solar panel cleaning,
-              plus power washing. Trust our skilled San Diego team to enhance
-              your home’s efficiency and curb appeal with exceptional results.
+              With over 10 years of experience, CaLi Cleanerz specializes in:
+              <ul>
+                <li>Windows</li>
+                <li>Solar</li>
+                <li>Pressure washing</li>
+                <li>Gutter cleaning</li>
+                <li>Screen cleaning</li>
+                <li>Trash bin deep cleaning</li>
+                <li>Grill cleaning</li>
+              </ul>
+              Trust our skilled San Diego team to enhance your home’s efficiency
+              and curb appeal with exceptional results.
             </p>
             <div className={styles.ctas}></div>
           </div>
