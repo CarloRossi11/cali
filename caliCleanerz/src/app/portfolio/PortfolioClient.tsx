@@ -49,6 +49,7 @@ export default function Page() {
             { src: "/solarSunset.jpeg", alt: "Sunset with clean solar" },
             { src: "/solarShiny.jpeg", alt: "Shiny Solar" },
             { src: "/seeThrough.JPG", alt: "Scenic see through" },
+            { src: "/walkway.jpeg", alt: "before and after walkway" },
             { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
             { src: "/city.png", alt: "city views" },
             { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
