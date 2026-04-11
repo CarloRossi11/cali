@@ -5,13 +5,11 @@ import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import Navbar from "../Navbar";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useTransform, useScroll } from "motion/react";
 import Reveal from "../components/Reveal";
 import { useRef } from "react";
 
 export default function Page() {
-  const MotionLink = motion.create(Link);
   const heroRef = useRef(null);
 
   const { scrollYProgress } = useScroll({

@@ -126,6 +126,32 @@ a.secondary {
   }
 }
 
+@media (min-width: 600px) {
+  .overlayImageWrapper {
+    inset: -80px 0 -80px 20%;
+  }
+
+  .overlayImage {
+    -webkit-mask-image: linear-gradient(to right, transparent 5%, black 40%);
+    mask-image: linear-gradient(to right, transparent 5%, black 40%);
+  }
+
+  .heroText {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .overlayImageWrapper {
+    inset: -80px 0 -80px 35%;
+  }
+
+  .heroText {
+    max-width: 45%;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background-color: #000;
