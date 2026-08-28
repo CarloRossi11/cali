@@ -22,7 +22,7 @@ export default function Footer() {
         <div className={styles.logoContainer}>
           <Link href={"/"}>
             <Image
-              src="/officialLogo.png"
+              src="/logoNew.png"
               alt="Cali Cleanerz logo"
               width={75}
               height={75}

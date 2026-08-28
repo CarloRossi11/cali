@@ -41,7 +41,7 @@ export default function Navbar() {
         <Link href="/">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Image
-              src="/officialLogo.png"
+              src="/logoNew.png"
               alt="Cali Cleanerz logo"
               width={75}
               height={75}
