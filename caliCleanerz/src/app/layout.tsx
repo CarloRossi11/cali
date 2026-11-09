@@ -80,7 +80,7 @@ export default function RootLayout({
               description:
                 "Cali Cleanerz provides professional window cleaning, solar panel cleaning, power washing, and gutter cleaning services across San Diego, CA.",
               priceRange: "$$",
-              telephone: "+1-610-763-9226",
+              telephone: "+1-619-915-0007",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "San Diego",

@@ -55,7 +55,7 @@ export default function HomeClient() {
           <h1>CaLi Cleanerz</h1>
           <h2>San Diego Window Cleaning & Pressure Washing</h2>
           <a className={styles.linkHover} href="tel:+16107639226">
-            610-763-9226
+            619-915-0007
           </a>
           <section className={styles.contact}>
             <ContactForm />

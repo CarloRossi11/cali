@@ -15,7 +15,7 @@ export default function Footer() {
             <strong>Cali Cleanerz Co.</strong>
 
             <a className={styles.wrench} href="tel:+16107639226">
-              610-763-9226
+              619-915-0007
             </a>
           </div>
         </div>
